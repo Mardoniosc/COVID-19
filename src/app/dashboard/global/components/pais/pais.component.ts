@@ -6,7 +6,7 @@ import { Pais } from 'src/app/shared/model';
 @Component({
   selector: 'app-pais',
   templateUrl: './pais.component.html',
-  styleUrls: ['./pais.component.css']
+  styleUrls: ['./pais.component.css','../../style.global.css']
 })
 export class PaisComponent implements OnInit {
 

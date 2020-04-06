@@ -1,11 +1,22 @@
-<H1>
-  pais: {{ pais.country }} <br>
-  Casos: {{ pais.cases }} <br>
-  Casos no Dia: {{ pais.todayCases }}<br>
-  Mortes: {{ pais.deaths }}<br>
-  Mortes no dia: {{ pais.todayDeaths }}<br>
-  Recuperados: {{ pais.recovered }}<br>
-  Ativos: {{ pais.active }}<br>
-  Críticos: {{ pais.critical }}<br>
-  Total de testes: {{ pais.totalTests }}<br>
-</H1>
+<body>
+  <div class="container">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title> {{ pais.country }}</mat-card-title>
+        <mat-card-subtitle>Total de casos: {{ pais.cases }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <H1>
+          Casos no Dia: {{ pais.todayCases }}<br>
+          Mortes: {{ pais.deaths }}<br>
+          Mortes no dia: {{ pais.todayDeaths }}<br>
+          Recuperados: {{ pais.recovered }}<br>
+          Ativos: {{ pais.active }}<br>
+          Críticos: {{ pais.critical }}<br>
+          Total de testes: {{ pais.totalTests }}<br>
+        </H1>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</body>

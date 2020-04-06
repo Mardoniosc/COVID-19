@@ -3,6 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../../shared'
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+import {
+  MatCardModule,
+  MatAutocompleteModule,
+  MatInputModule,
+  MatSnackBarModule,
+  MatFormFieldModule,
+} from '@angular/material'
+
 import {  GlobalComponent,
           IndexGlobalComponent,
           PaisComponent,
@@ -19,7 +29,13 @@ import {  GlobalComponent,
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    MatCardModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    BrowserAnimationsModule,
   ]
 })
 export class GlobalModule { }

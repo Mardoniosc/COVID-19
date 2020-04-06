@@ -1,0 +1,22 @@
+div .container {
+  display: flex;
+}
+
+div .cardContainer {
+  width: 100%;
+  max-width: 315px;
+  text-align: center;
+  background: #000000;
+}
+.header-image {
+  background-image: url('../../../../../assets/global.png');
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+}
+
+.content h1 {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}

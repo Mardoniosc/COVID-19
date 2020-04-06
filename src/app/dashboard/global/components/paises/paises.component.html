@@ -1,15 +1,30 @@
-<li *ngFor="let pais of paisesAll">
-    pais: {{ pais.country }} <br>
-    Casos: {{ pais.cases }} <br>
-    Casos no Dia: {{ pais.todayCases }}<br>
-    Mortes: {{ pais.deaths }}<br>
-    Mortes no dia: {{ pais.todayDeaths }}<br>
-    Recuperados: {{ pais.recovered }}<br>
-    Ativos: {{ pais.active }}<br>
-    Críticos: {{ pais.critical }}<br>
-    Total de testes: {{ pais.totalTests }}<br>
+<body style="align-items: flex-start;">
+  <form>
+    <mat-form-field>
+      <mat-label>Digite o país</mat-label>
+      <input
+        matInput
+        placeholder='País'
+        #paisPesquisado
+        (keyup)="pesquisa(paisPesquisado.value)"
+      >
+    </mat-form-field>
+  </form>
+</body>
 
-  <br>
-  <p>==========\\//==========</p>
-  <br>
-</li>
+
+  <li *ngFor="let pais of paisesAll">
+      pais: {{ pais.country }} <br>
+      Casos: {{ pais.cases }} <br>
+      Casos no Dia: {{ pais.todayCases }}<br>
+      Mortes: {{ pais.deaths }}<br>
+      Mortes no dia: {{ pais.todayDeaths }}<br>
+      Recuperados: {{ pais.recovered }}<br>
+      Ativos: {{ pais.active }}<br>
+      Críticos: {{ pais.critical }}<br>
+      Total de testes: {{ pais.totalTests }}<br>
+
+    <br>
+    <p>==========\\//==========</p>
+    <br>
+  </li>
