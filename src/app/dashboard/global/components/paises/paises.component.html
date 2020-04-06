@@ -1,7 +1,13 @@
 <li *ngFor="let pais of paisesAll">
-  Pais: {{ pais.country }} <br>
-  casos: {{ pais.cases }} <br>
-  Mortes: {{ pais.deaths }} <br>
+    pais: {{ pais.country }} <br>
+    Casos: {{ pais.cases }} <br>
+    Casos no Dia: {{ pais.todayCases }}<br>
+    Mortes: {{ pais.deaths }}<br>
+    Mortes no dia: {{ pais.todayDeaths }}<br>
+    Recuperados: {{ pais.recovered }}<br>
+    Ativos: {{ pais.active }}<br>
+    Críticos: {{ pais.critical }}<br>
+    Total de testes: {{ pais.totalTests }}<br>
 
   <br>
   <p>==========\\//==========</p>
