@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { GlobalModule, GlobalRoutingModule } from './dashboard'
 
 import { AppRoutingModule } from './app-routing.module'
-import { CovidService } from './shared/services'
+import { SharedModule } from './shared'
 
 @NgModule({
   declarations: [
@@ -20,10 +20,11 @@ import { CovidService } from './shared/services'
     RouterModule,
     GlobalModule,
     GlobalRoutingModule,
+    SharedModule,
 
     AppRoutingModule,
   ],
-  providers: [ CovidService ],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,25 @@
+body {
+  height: 100%;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  width: 100%;
+  max-width: 315px;
+  text-align: center;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+p {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+
+}

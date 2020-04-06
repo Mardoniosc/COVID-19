@@ -6,7 +6,7 @@ import { Global, Pais } from '../../../../shared/model'
 @Component({
   selector: 'app-global',
   templateUrl: './global.component.html',
-  styleUrls: ['./global.component.css']
+  styleUrls: ['./global.component.css', '../../atyle.global.css']
 })
 export class GlobalComponent implements OnInit {
 
