@@ -1,15 +1,17 @@
 <body>
   <div class="container">
-    <mat-card>
+    <mat-card class="car-global">
       <mat-card-header>
         <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>Mundial</mat-card-title>
+        <mat-card-title>Mundo</mat-card-title>
         <mat-card-subtitle>Covid-19</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content class="content">
-        <p> Casos: {{ global.cases }} </p>
-        <p> Mortes: {{ global.deaths }} </p>
-        <p> Recuperados: {{ global.recovered }} </p>
+        <H1>
+          <p> Casos: {{ global.cases | number }} </p>
+          <p> Mortes: {{ global.deaths | number}} </p>
+          <p> Recuperados: {{ global.recovered | number }} </p>
+        </H1>
       </mat-card-content>
     </mat-card>
   </div>

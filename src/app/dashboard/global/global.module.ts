@@ -11,6 +11,7 @@ import {
   MatInputModule,
   MatSnackBarModule,
   MatFormFieldModule,
+  MatGridListModule,
 } from '@angular/material'
 
 import {  GlobalComponent,
@@ -33,6 +34,7 @@ import {  GlobalComponent,
     MatCardModule,
     MatAutocompleteModule,
     MatInputModule,
+    MatGridListModule,
     MatSnackBarModule,
     MatFormFieldModule,
     BrowserAnimationsModule,

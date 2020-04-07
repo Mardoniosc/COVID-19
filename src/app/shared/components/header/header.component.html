@@ -2,7 +2,24 @@
   <div class="conteudo-header">
     <nav>
       <img  class="covid-img" src="../../../../assets/covid19.png" alt="COVID19">
-      <a routerLink="/dashboard">Home</a>
+      <a routerLink="/dashboard">Mundo</a>
+    </nav>
+    <nav>
+      <a>
+        <button mat-button [matMenuTriggerFor]="menu">Brasil</button>
+        <mat-menu #menu="matMenu">
+          <a routerLink="/dashboard/paises/Brazil">
+            <button mat-menu-item>Geral</button>
+          </a>
+          <a routerLink="/dashboard/paises/Brazil">
+            <button mat-menu-item>Estados</button>
+          </a>
+          <a routerLink="/dashboard/paises/Brazil">
+            <button mat-menu-item>Casos por data</button>
+          </a>
+
+        </mat-menu>
+      </a>
     </nav>
     <aside>
       <div class="paises-all">

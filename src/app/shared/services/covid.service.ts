@@ -9,7 +9,7 @@ import { environment as env } from '../../../environments/environment'
 export class CovidService {
 
   private readonly PATHALL: string = '/all'
-  private readonly PATHPAISES: string = '/countries'
+  private readonly PATHPAISES: string = '/countries/'
 
   constructor(private http: HttpClient) { }
 
@@ -19,7 +19,7 @@ export class CovidService {
   }
 
   pais(pais: String): Observable<any> {
-    return this.http.get(env.baseUrl + this.PATHPAISES + '/' + pais)
+    return this.http.get(env.baseUrl + this.PATHPAISES + pais)
   }
 
   paises(): Observable<any> {

@@ -1,22 +1,45 @@
 div .container {
   display: flex;
-}
-
-div .cardContainer {
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 315px;
-  text-align: center;
-  background: #000000;
-}
-.header-image {
-  background-image: url('../../../../../assets/global.png');
-  background-size: cover;
-  height: 35px;
-  width: 35px;
 }
 
-.content h1 {
-  font-size: 16px;
-  color: black;
+div .cards {
+  width: 430px;
+}
+
+mat-card {
+  width: 98%;
+}
+
+p {
+  font-size: 20px;
   font-weight: bold;
 }
+
+.card-pais-confirmado {
+  color: rgb(0, 89, 253);
+}
+.card-pais-dia {
+  color: rgb(99, 121, 0);
+}
+.card-pais-recuperados {
+  color: rgb(81, 253, 46);
+}
+.card-pais-morte {
+  color: rgb(253, 44, 44);
+}
+
+.card-pais-ativo {
+  color: rgb(81, 253, 46);
+}
+.card-pais-critico {
+  color: rgb(253, 44, 44);
+}
+.card-pais-aguardando-teste {
+  color: rgb(192, 196, 4);
+}
+
+
+

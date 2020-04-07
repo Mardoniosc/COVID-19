@@ -1,22 +1,62 @@
 <body>
   <div class="container">
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title> {{ pais.country }}</mat-card-title>
-        <mat-card-subtitle>Total de casos: {{ pais.cases }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content class="content">
-        <H1>
-          Casos no Dia: {{ pais.todayCases }}<br>
-          Mortes: {{ pais.deaths }}<br>
-          Mortes no dia: {{ pais.todayDeaths }}<br>
-          Recuperados: {{ pais.recovered }}<br>
-          Ativos: {{ pais.active }}<br>
-          Críticos: {{ pais.critical }}<br>
-          Total de testes: {{ pais.totalTests }}<br>
-        </H1>
-      </mat-card-content>
-    </mat-card>
+    <div class="cards">
+      <p>Totais no: {{ pais.country }} </p>
+      <mat-grid-list cols="2" rowHeight="100px" style="width: 100%;">
+        <mat-grid-tile>
+          <mat-card class="card-pais-confirmado">
+            {{ pais.cases | number }} <br>
+            Confirmados
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-dia">
+            {{ pais.todayCases | number }} <br>
+            Casos no Dia
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-recuperados">
+            {{ pais.recovered | number }} <br>
+            Recuperados
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-morte">
+            {{ pais.deaths | number }} <br>
+            Mortes
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-morte">
+            {{ pais.todayDeaths | number }} <br>
+            Mortes no dia
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <p>Acompanhamento</p>
+
+      <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile>
+          <mat-card class="card-pais-ativo">
+            {{ pais.active | number }}
+            Ativos
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-critico">
+            {{ pais.critical | number }}
+            Críticos
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-aguardando-teste">
+            {{ pais.totalTests | number }}
+            Aguardando teste
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
   </div>
 </body>

@@ -2,7 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CovidService } from './services'
 import { RouterModule } from '@angular/router'
+import {
+  MatMenuModule,
+  MatButtonModule
 
+} from '@angular/material';
 import { FooterComponent, HeaderComponent } from './components'
 
 @NgModule({
@@ -12,7 +16,9 @@ import { FooterComponent, HeaderComponent } from './components'
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   exports: [
     FooterComponent,
