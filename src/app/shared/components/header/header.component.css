@@ -30,6 +30,11 @@ a {
   color: rgb(235, 119, 119);
 }
 
+button {
+  font-weight: bold;
+  color: rgb(235, 119, 119);
+}
+
 aside {
   display: flex;
   align-items: center;
