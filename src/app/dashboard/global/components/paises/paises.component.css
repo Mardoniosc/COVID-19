@@ -1,0 +1,12 @@
+div .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+div .cards {
+  width: 100%;
+  max-width: 430px;
+}
+

@@ -11,6 +11,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 export class PaisesComponent implements OnInit {
 
   paisesAll: Pais[]
+  paisesFiltrados: Pais[]
 
   constructor(
     private snakerBar: MatSnackBar,
@@ -24,7 +25,11 @@ export class PaisesComponent implements OnInit {
   carregaTodosOsPaises(){
     this.covidService.paises()
       .subscribe(
-        data => this.paisesAll = data,
+        data => {
+          this.paisesAll = data
+          this.paisesFiltrados = this.paisesAll
+          return data
+        },
         err => {
           let msg: "Erro ao tentar buscar os paises na api"
           this.snakerBar.open( msg, 'info', { duration: 5000 })
@@ -33,6 +38,9 @@ export class PaisesComponent implements OnInit {
   }
 
   pesquisa(pesquisa: string){
+    this.paisesFiltrados = this.paisesAll.filter(
+      item => item.country.trim().toLowerCase().includes(pesquisa.trim().toLowerCase())
+    )
     console.log(pesquisa)
   }
 
