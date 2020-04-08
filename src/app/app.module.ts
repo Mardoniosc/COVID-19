@@ -5,7 +5,13 @@ import { HttpClientModule } from '@angular/common/http'
 
 
 import { AppComponent } from './app.component';
-import { GlobalModule, GlobalRoutingModule } from './dashboard'
+import {
+  GlobalModule,
+  GlobalRoutingModule,
+  BrasilModule,
+  BrasilRoutingModule
+
+} from './dashboard'
 
 import { AppRoutingModule } from './app-routing.module'
 import { SharedModule } from './shared'
@@ -21,6 +27,8 @@ import { SharedModule } from './shared'
     GlobalModule,
     GlobalRoutingModule,
     SharedModule,
+    BrasilModule,
+    BrasilRoutingModule,
 
     AppRoutingModule,
   ],

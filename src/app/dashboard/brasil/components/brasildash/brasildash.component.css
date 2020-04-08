@@ -1,0 +1,42 @@
+div .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+div .cards {
+  width: 430px;
+}
+
+mat-card {
+  width: 98%;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-pais-confirmado {
+  color: rgb(0, 89, 253);
+}
+.card-pais-dia {
+  color: rgb(99, 121, 0);
+}
+.card-pais-recuperados {
+  color: rgb(81, 253, 46);
+}
+.card-pais-morte {
+  color: rgb(253, 44, 44);
+}
+
+.card-pais-ativo {
+  color: rgb(81, 253, 46);
+}
+.card-pais-critico {
+  color: rgb(253, 44, 44);
+}
+.card-pais-aguardando-teste {
+  color: rgb(192, 196, 4);
+}

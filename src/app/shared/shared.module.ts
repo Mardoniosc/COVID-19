@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CovidService } from './services'
+import { CovidService, BrasilCovidService } from './services'
 import { RouterModule } from '@angular/router'
 import {
   MatMenuModule,
@@ -24,6 +24,6 @@ import { FooterComponent, HeaderComponent } from './components'
     FooterComponent,
     HeaderComponent
   ],
-  providers: [ CovidService ]
+  providers: [ CovidService, BrasilCovidService ]
 })
 export class SharedModule { }

@@ -1,0 +1,62 @@
+<div class="body">
+  <div class="container">
+    <div class="cards">
+      <p>Totais no Brasil</p>
+      <mat-grid-list cols="2" rowHeight="100px" style="width: 100%;">
+        <mat-grid-tile>
+          <mat-card class="card-pais-confirmado">
+            {{ pais.cases | number }} <br>
+            Confirmados
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-dia">
+            {{ pais.todayCases | number }} <br>
+            Casos no Dia
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-recuperados">
+            {{ pais.recovered | number }} <br>
+            Recuperados
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-morte">
+            {{ pais.deaths | number }} <br>
+            Mortes
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-morte">
+            {{ pais.todayDeaths | number }} <br>
+            Mortes no dia
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <p>Acompanhamento</p>
+
+      <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile>
+          <mat-card class="card-pais-ativo">
+            {{ pais.active | number }}
+            Ativos
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-critico">
+            {{ pais.critical | number }}
+            Críticos
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-aguardando-teste">
+            {{ pais.totalTests | number }}
+            Aguardando teste
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+</div>
