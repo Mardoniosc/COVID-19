@@ -16,7 +16,7 @@ export const routesBrasil: Routes = [
     children: [
       { path: '', component: BrasildashComponent },
       { path: 'estados', component: BrasilEstadosComponent },
-      { path: 'estado/:uf', component: BrasilEstadoComponent },
+      { path: 'estados/:uf', component: BrasilEstadoComponent },
       { path: 'data', component: BrasilDatasComponent }
 
     ]

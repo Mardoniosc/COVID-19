@@ -33,6 +33,4 @@ export class BrasildashComponent implements OnInit {
         err => console.log(err)
       )
   }
-
-
 }

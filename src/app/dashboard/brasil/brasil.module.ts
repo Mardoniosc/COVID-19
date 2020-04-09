@@ -19,7 +19,13 @@ import {
   MatSnackBarModule,
   MatFormFieldModule,
   MatGridListModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
 } from '@angular/material'
+
+import {
+  MatMomentDateModule,
+} from "@angular/material-moment-adapter";
 
 
 @NgModule({
@@ -40,6 +46,10 @@ import {
     MatSnackBarModule,
     MatFormFieldModule,
     MatGridListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatMomentDateModule,
+
   ]
 })
 export class BrasilModule { }
