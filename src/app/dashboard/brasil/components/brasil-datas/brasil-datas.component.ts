@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDatepickerInputEvent } from '@angular/material';
 
+import { BrasilCovidService } from 'src/app/shared/services'
+import { Estado } from 'src/app/shared/model';
+
 @Component({
   selector: 'app-brasil-datas',
   templateUrl: './brasil-datas.component.html',
-  styleUrls: ['./brasil-datas.component.css']
+  styleUrls: ['./brasil-datas.component.css', '../../brasil.style.css']
 })
 export class BrasilDatasComponent implements OnInit {
 
-  casos = [1,2,3,4,5,5]
+  estados: Estado[]
 
   constructor(
-
+    private brasiCovidService: BrasilCovidService,
   ) { }
 
   ngOnInit() {
@@ -19,11 +22,21 @@ export class BrasilDatasComponent implements OnInit {
   }
   addEvent(event: MatDatepickerInputEvent<Date>) {
     let data = JSON.stringify(event.value)
-    console.log(data)
     data = data.slice(1, 11);
     data = data.replace('-', '')
     data = data.replace('-', '')
-    console.log(data)
+    this.carragardados(data)
+  }
+
+  carragardados(data: string){
+    this.brasiCovidService.casosPorData(data)
+      .subscribe(
+        data => {
+          this.estados = data.data
+          return data
+        },
+        err => console.log(err)
+      )
   }
 
 }

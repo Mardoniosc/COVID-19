@@ -27,7 +27,6 @@ export class BrasildashComponent implements OnInit {
       .subscribe(
         data => {
           this.pais = data
-          console.log(this.pais)
           return data
         },
         err => console.log(err)

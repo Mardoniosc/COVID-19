@@ -27,7 +27,6 @@ export class PaisComponent implements OnInit {
       .subscribe(
         data => {
           this.pais = data
-          console.log(this.pais)
           return data
 
         },
