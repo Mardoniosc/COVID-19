@@ -43,7 +43,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-:link: ## features para o futuro
+## features para o futuro :link: 
 
 :information_source: Adicionar uma pagina com ultimas noticias sobre o corona virus
   :arrow_right_hook: podendo separar as noticias por estados
