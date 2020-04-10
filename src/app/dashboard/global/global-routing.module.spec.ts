@@ -1,7 +1,7 @@
-import { GlobalRouting.Module } from './global-routing.module';
+import { GlobalRoutingModule } from './global-routing.module';
 
 describe('GlobalRouting.Module', () => {
   it('should create an instance', () => {
-    expect(new GlobalRouting.Module()).toBeTruthy();
+    expect(new GlobalRoutingModule()).toBeTruthy();
   });
 });

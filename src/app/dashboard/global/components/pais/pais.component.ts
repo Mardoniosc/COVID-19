@@ -14,7 +14,6 @@ export class PaisComponent implements OnInit {
   paisNome: string
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private covidService: CovidService
   ) { }
 

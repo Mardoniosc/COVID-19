@@ -1,13 +1,32 @@
-<li *ngFor="let item of estados">
- id: {{item.uid}} <br>
-  UF: {{item.uf}} <br>
-  Estado: {{item.state}}
-  Casos: {{item.cases}} <br>
-  Mortes: {{item.deaths}} <br>
-  Descartados: {{item.refuses}} <br>
-  Suspeitos: {{item.suspects}} <br>
-  Ultima atualização: {{item.datetime}} <br>
-  <br>
-   ========== || ==========
-  <br>
-</li>
+
+<div class="body">
+  <div class="container" style="flex-direction: column;">
+    <br>
+    <form>
+      <mat-form-field class="example-full-width">
+        <mat-label>Estado</mat-label>
+        <input
+          matInput
+          placeholder="Digite o estado"
+          #estadoPesquisado
+          (keyup)="pesquisa(estadoPesquisado.value)"
+          style="width: 100%;"
+        >
+      </mat-form-field>
+    </form>
+    <br>
+    <div class="cards">
+      <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile *ngFor="let uf of estadosFiltrados">
+          <a routerLink="/brasil/estados/{{ uf.uf }}">
+            <mat-card style="font-size: 15px; font-weight: bold;">
+              UF: {{ uf.state }} <br>
+              Casos: {{ uf.cases }}<br>
+              Mortes: {{ uf.deaths }}<br>
+            </mat-card>
+          </a>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+</div>

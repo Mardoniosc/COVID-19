@@ -19,6 +19,7 @@ export class BrasilDatasComponent implements OnInit {
   }
   addEvent(event: MatDatepickerInputEvent<Date>) {
     let data = JSON.stringify(event.value)
+    console.log(data)
     data = data.slice(1, 11);
     data = data.replace('-', '')
     data = data.replace('-', '')

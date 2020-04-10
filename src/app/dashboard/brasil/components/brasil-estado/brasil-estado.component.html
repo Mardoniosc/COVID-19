@@ -1,1 +1,35 @@
-<p>brasil-estado works!</p>
+<div class="body">
+  <div class="container">
+    <div class="cards">
+      <p>Totais em {{estado.state}}</p>
+      <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile>
+          <mat-card class="card-pais-confirmado">
+            {{ estado.cases | number }} <br>
+            Confirmados
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-recuperados">
+            {{ estado.refuses | number }} <br>
+            Resultado negativo
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-morte">
+            {{ estado.deaths | number }} <br>
+            Mortes
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="card-pais-aguardando-teste">
+            {{ estado.suspects | number }} <br>
+            Suspeitos
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <p>Ultima atualização: {{dataAtualizada}}</p><br>
+      <button  mat-raised-button disabled>Detalhar por municípios</button>
+    </div>
+  </div>
+</div>

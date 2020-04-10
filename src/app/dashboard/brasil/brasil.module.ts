@@ -20,6 +20,7 @@ import {
   MatFormFieldModule,
   MatGridListModule,
   MatDatepickerModule,
+  MatButtonModule,
   MatNativeDateModule,
 } from '@angular/material'
 
@@ -45,6 +46,7 @@ import {
     MatInputModule,
     MatSnackBarModule,
     MatFormFieldModule,
+    MatButtonModule,
     MatGridListModule,
     MatDatepickerModule,
     MatNativeDateModule,

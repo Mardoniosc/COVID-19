@@ -10,3 +10,10 @@ div .cards {
   max-width: 430px;
 }
 
+mat-card {
+  width: 98%;
+}
+
+a {
+  width: 100%;
+}

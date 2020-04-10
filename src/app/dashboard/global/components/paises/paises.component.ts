@@ -41,7 +41,6 @@ export class PaisesComponent implements OnInit {
     this.paisesFiltrados = this.paisesAll.filter(
       item => item.country.trim().toLowerCase().includes(pesquisa.trim().toLowerCase())
     )
-    console.log(pesquisa)
   }
 
 }
