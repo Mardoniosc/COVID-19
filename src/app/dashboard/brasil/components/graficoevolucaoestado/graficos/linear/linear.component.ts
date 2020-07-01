@@ -6,7 +6,7 @@ import { Estado } from 'src/app/shared/model';
 import { formatDate } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
-export interface DadosGrafico{
+interface DadosGrafico{
   data: number[],
   label: string
 }
@@ -50,6 +50,7 @@ export class LinearComponent implements OnInit {
     this.brasiCovidService.casosPorData(dataDia)
       .subscribe(
         data => {
+
           if(data.data.length < 1){
             this.carragardadosSeFalhar(dataDia, index)
           }
@@ -68,11 +69,11 @@ export class LinearComponent implements OnInit {
     this.brasiCovidService.casosPorData(dataDia)
       .subscribe(
         data => {
-          if(data.data.length < 1){
-            console.log('Falou aqui')
-          }
           data.data.forEach(estado => {
+            console.log(estado);
+            console.log(this.ufNome);
             if(estado.uf === this.ufNome){
+              console.log(index + 'Index ' + estado.cases)
               this.data[index] = estado.cases;
             }
           });
