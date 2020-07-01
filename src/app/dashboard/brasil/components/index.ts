@@ -3,4 +3,5 @@ export * from './brasil-datas'
 export * from './brasil-estado'
 export * from './brasil-estados'
 export * from './brasil.component'
+export * from './graficoevolucaoestado'
 

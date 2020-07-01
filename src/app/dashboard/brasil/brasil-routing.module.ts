@@ -6,7 +6,8 @@ import {
   BrasildashComponent,
   BrasilDatasComponent,
   BrasilEstadoComponent,
-  BrasilEstadosComponent
+  BrasilEstadosComponent,
+  GraficoevolucaoestadoComponent,
 } from './components'
 
 export const routesBrasil: Routes = [
@@ -17,6 +18,7 @@ export const routesBrasil: Routes = [
       { path: '', component: BrasildashComponent },
       { path: 'estados', component: BrasilEstadosComponent },
       { path: 'estados/:uf', component: BrasilEstadoComponent },
+      { path: 'estados/grafico/:uf', component: GraficoevolucaoestadoComponent },
       { path: 'data', component: BrasilDatasComponent }
 
     ]

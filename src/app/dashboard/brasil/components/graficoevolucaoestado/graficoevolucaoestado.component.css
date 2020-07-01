@@ -1,0 +1,19 @@
+div .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+div .cards {
+  width: 730px;
+  height: 600px;
+}
+
+mat-card {
+  width: 98%;
+}
+
+a {
+  width: 100%;
+}

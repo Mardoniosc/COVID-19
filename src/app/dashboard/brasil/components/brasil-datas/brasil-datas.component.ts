@@ -29,6 +29,7 @@ export class BrasilDatasComponent implements OnInit {
   }
 
   carragardados(data: string){
+    console.log(data);
     this.brasiCovidService.casosPorData(data)
       .subscribe(
         data => {

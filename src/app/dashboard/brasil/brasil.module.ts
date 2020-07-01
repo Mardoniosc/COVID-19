@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ChartsModule } from 'ng2-charts';
+
 import { SharedModule } from '../../shared'
 
 import {
@@ -8,7 +10,9 @@ import {
   BrasilComponent,
   BrasilDatasComponent,
   BrasilEstadoComponent,
-  BrasilEstadosComponent
+  BrasilEstadosComponent,
+  GraficoevolucaoestadoComponent,
+  LinearComponent
 } from './components';
 import { RouterModule } from '@angular/router';
 
@@ -35,7 +39,9 @@ import {
     BrasilComponent,
     BrasilEstadosComponent,
     BrasilDatasComponent,
-    BrasilEstadoComponent
+    BrasilEstadoComponent,
+    GraficoevolucaoestadoComponent,
+    LinearComponent
   ],
   imports: [
     CommonModule,
@@ -48,6 +54,7 @@ import {
     MatFormFieldModule,
     MatButtonModule,
     MatGridListModule,
+    ChartsModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatMomentDateModule,
