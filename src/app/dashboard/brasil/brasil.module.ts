@@ -31,6 +31,13 @@ import {
 import {
   MatMomentDateModule,
 } from "@angular/material-moment-adapter";
+import { LinearMaioComponent } from './components/graficoevolucaoestado/graficos/linear-maio/linear-maio.component';
+import { LinearFevereiroComponent } from './components/graficoevolucaoestado/graficos/linear-fevereiro/linear-fevereiro.component';
+import { LinearJaneiroComponent } from './components/graficoevolucaoestado/graficos/linear-janeiro/linear-janeiro.component';
+import { LinearMarcoComponent } from './components/graficoevolucaoestado/graficos/linear-marco/linear-marco.component';
+import { LinearAbrilComponent } from './components/graficoevolucaoestado/graficos/linear-abril/linear-abril.component';
+import { LinearJunhoComponent } from './components/graficoevolucaoestado/graficos/linear-junho/linear-junho.component';
+import { LinearJulhoComponent } from './components/graficoevolucaoestado/graficos/linear-julho/linear-julho.component';
 
 
 @NgModule({
@@ -41,7 +48,14 @@ import {
     BrasilDatasComponent,
     BrasilEstadoComponent,
     GraficoevolucaoestadoComponent,
-    LinearComponent
+    LinearComponent,
+    LinearMaioComponent,
+    LinearFevereiroComponent,
+    LinearJaneiroComponent,
+    LinearMarcoComponent,
+    LinearAbrilComponent,
+    LinearJunhoComponent,
+    LinearJulhoComponent
   ],
   imports: [
     CommonModule,
